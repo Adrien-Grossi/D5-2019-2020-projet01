@@ -1,0 +1,107 @@
+@-webkit-keyframes shadow-inset-center {
+  0% {
+    -webkit-box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
+            box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-box-shadow: inset 0 0 14px 0px rgba(0, 0, 0, 0.5);
+            box-shadow: inset 0 0 14px 0px rgba(0, 0, 0, 0.5);
+  }
+}
+@keyframes shadow-inset-center {
+  0% {
+    -webkit-box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
+            box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-box-shadow: inset 0 0 14px 0px rgba(0, 0, 0, 0.5);
+            box-shadow: inset 0 0 14px 0px rgba(0, 0, 0, 0.5);
+  }
+}
+html {
+    scroll-behavior: smooth;
+}
+
+#btnone {
+  color: #90959e;
+  font-size: 2rem;
+  position: -webkit-sticky;
+position: sticky;
+left: 87%;
+top: 70px;
+padding: 5px;
+  }
+
+#btnone:hover {
+  -webkit-animation: shadow-inset-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+          animation: shadow-inset-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+#trait {
+    border: none;
+    border-top: 3px solid;
+    overflow: visible;
+    position: sticky;
+    top: 120px;
+    left: 100%;
+    width: 17%;
+    height: 5px;
+    z-index: 999;
+}
+#bravoniel {
+  width: 100%;
+  height: auto;
+  margin-bottom: 25px;
+}
+.youyou {
+display:block;
+margin: auto;
+margin-bottom: 150px;
+width: 40%;
+height: 400px;
+}
+
+#btntow {
+  color: #96853e;
+  font-size: 2em;
+  position: -webkit-sticky;
+position: sticky;
+left: 90%;
+top: 70px;
+padding: 5px;
+}
+#btntow:hover {
+  -webkit-animation: shadow-inset-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+          animation: shadow-inset-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@media screen and (max-width: 820px) {
+  #trait {
+opacity: 0;
+  }
+#btnone {
+  font-size: 1.5em;
+  left: 94%;
+  top: 45px;
+  border-radius: 50px 50px 0px 0px;
+  border: 2px solid rgba(255, 255, 255, 0);
+  padding: 8px 0px 2px 0px;
+    }
+#btntow {
+  font-size: 1.5em;
+  left: 94%;
+  top: 83px;
+  border-radius: 0px 0px 50px 50px;
+  border: 2px solid rgba(255, 255, 255, 0);
+  padding: 2px 0px 8px 0px;
+    }
+
+.youyou {
+  display:block;
+  margin: auto;
+  margin-bottom: 150px;
+  width: 100%;
+  height: 400px;
+}
+
+
+}

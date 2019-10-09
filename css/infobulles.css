@@ -1,0 +1,77 @@
+a:active,a:focus{
+     background:rgba(0,0,0,.4);
+     box-shadow:0 1px 0 rgba(255,255,255,.4);
+}
+
+a span{
+     position:absolute;
+     margin-top: 23px;
+     margin-right: 0;
+     color: #5589f2;
+     background:rgba(0,0,0,.9);
+     padding: 15px;
+     border-radius: 3px;
+     box-shadow:0 0 2px rgba(0,0,0,.5);
+     transform:scale(0) rotate(0deg);
+     transition:all .25s;
+     opacity:0;
+}
+
+a:active span, a:focus span{
+     transform:scale(1) rotate(0);
+     opacity:1;
+}
+
+#agency {
+  width: auto;
+  height: 200px;
+}
+#fiction {
+  width: auto;
+  height: 200px;
+}
+#lecteur {
+  width: auto;
+  height: 50%;
+}
+#enid {
+  width: auto;
+  height: 500px;
+}
+#carrie {
+  width: auto;
+  height: 500px;
+}
+#tolki {
+  width: auto;
+  height: 300px;
+}
+#albert {
+  width: auto;
+  height: 400px;
+}
+@media screen and (max-width: 1020px) {
+#agency {
+  width: auto;
+  height: 100px;
+}
+#lecteur {
+  width: auto;
+  height: 20%;
+}
+#enid {
+  width: auto;
+  height: 100px;
+}
+#carrie {
+  width: auto;
+  height: 200px;
+}
+#tolki {
+  width: auto;
+  height: 100px;
+}
+#albert {
+  width: auto;
+  height: 200px;
+}

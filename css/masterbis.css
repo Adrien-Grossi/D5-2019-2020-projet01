@@ -1,0 +1,55 @@
+body {
+  background-color: #d9d9b0;
+  color: #36332e;
+}
+
+body{counter-reset: p;}
+p:before {
+  content: counter(p) "§______";
+  opacity: 0.1;
+  counter-increment: p;
+  position: relative;
+  right: 300px;
+  font-size: 2rem;
+}
+.progress-bar {
+  height: 8px;
+  background: #36332e;
+  border-radius: 0px 50px 50px 0px;
+  width: 0%;
+}
+
+a {
+     color: #bd9909;
+     text-shadow:0 0px 0 black;
+     text-decoration: none;
+}
+#trait {
+    color: #36332e;
+  }
+#special {
+  color: #ff8c00;
+}
+
+.lnr-mic {
+ color: #ff8c00;
+}
+.controls button {
+  color: #ff8c00;
+ }
+
+
+@media screen and (max-width: 1020px) {
+p:before {
+  content: counter(p) "§___";
+  right: 90px;
+  font-size: 1.5rem;
+}
+}
+@media screen and (max-width: 820px) {
+  p:before {
+    content: counter(p) "§";
+    right: 30px;
+    font-size: 1.5rem;
+  }
+}
